@@ -1,0 +1,17 @@
+# List short cut
+alias ll="ls -lAh"
+
+# git
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
+
+# traversing the stack
+alias d='dirs -v'
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
+
+# nvim
+alias vim='nvim'
+
+# Pacman
+alias supacs='sudo pacman -S'
