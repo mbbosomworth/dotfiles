@@ -13,7 +13,7 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:Inconsolata NF 18
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -207,6 +207,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 
 bar {
+    position top
     status_command i3status -c $HOME/.config/i3/i3status.conf
     tray_output none
     colors {
@@ -242,7 +243,7 @@ for_window [class="Arandr"] floating enable
 for_window [class=".*"] border pixel 1
 
 # Gaps
-gaps inner 9
+gaps inner 12
 
 # Color Scheme
 #
@@ -304,9 +305,11 @@ for_window [instance="htop_scratchpad"] move to scratchpad, border none
 bindsym $mod+p [instance="htop_scratchpad"] scratchpad show
 exec urxvtc -name htop_scratchpad -e htop
 
+# Dunst
+exec --no-startup-id dunst
 
-
-
+# Rebind refresh
+bindsym $mod+z exec "setxkbmap --option 'caps:ctrl_modifier';xcape -e 'Caps_Lock=Escape'&"
 
 
 
