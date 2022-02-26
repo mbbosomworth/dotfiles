@@ -14,4 +14,4 @@ for index ({1..9}) alias "$index"="cd +${index}"; unset index
 alias vim='nvim'
 
 # Pacman
-alias supacs='sudo pacman -S'
+alias pac='sudo pacman -S'

@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Neovim
-mkdir -p "$XDG_CONFIG_HOME/nvim/undo"
-ln -sf "$DOTFILES/nvim/init.vim" "$XDG_CONFIG_HOME/nvim"
+mkdir -p "$XDG_CONFIG_HOME/undo"
+ln -sf "$DOTFILES/nvim" "$XDG_CONFIG_HOME"
 
 # Xresources
 rm -rf "$XDG_CONFIG_HOME/X11"
@@ -27,3 +27,7 @@ cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
 # Dunst
 mkdir -p "$XDG_CONFIG_HOME/dunst"
 ln -sf "$DOTFILES/dunst/dunstrc" "$XDG_CONFIG_HOME/dunst/dunstrc"
+
+# Tmux
+mkdir -p "$XDG_CONFIG_HOME/tmux"
+ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
