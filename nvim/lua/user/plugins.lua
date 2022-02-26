@@ -52,6 +52,12 @@ return packer.startup(function(use)
     -- lsp 
     use "neovim/nvim-lspconfig"
     use "williamboman/nvim-lsp-installer"
+
+    -- controls for tmux
+    use "christoomey/vim-tmux-navigator"
+
+    -- treesitter
+    use "nvim-treesitter/nvim-treesitter"
     
     if packer_bootstrap then
         require('packer').sync()

@@ -16,9 +16,9 @@ local options = {
     -- Tab settings
     autoindent = true,
     expandtab = true,
-    tabstop = 2,
-    softtabstop = 2,
-    shiftwidth = 2,
+    tabstop = 4,
+    softtabstop = 4,
+    shiftwidth = 4,
     -- Cursor options
     scrolloff = 8,
     sidescrolloff = 8,

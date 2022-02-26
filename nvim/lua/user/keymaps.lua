@@ -9,3 +9,9 @@ vim.g.maplocalleader = " "
 
 -- Escape characters
 map("i", "kj", "<ESC>", options)
+
+-- yank to end of line with capital Y
+-- map("v", "Y", "y$", options)
+
+-- break up undo
+map("i", ",", ",<C-g>u", options)
