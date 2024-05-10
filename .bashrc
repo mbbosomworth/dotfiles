@@ -27,3 +27,6 @@ PS1='[\u@\h \W]\$ '
 
 # Run zoxide for cd
 eval "$(zoxide init --cmd cd bash)"
+
+# Path for scripts/binaries
+PATH="$HOME/bin:$PATH"
