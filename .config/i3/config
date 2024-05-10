@@ -164,8 +164,10 @@ exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 gaps inner 2
 
 # Disable title bars
-for_window [class=".*"] border pixel 0
-# client.focused              #353439 #B4BEFE #7B9F35
+for_window [class=".*"] border pixel 1
+
+# Border colors
+client.focused              #000000 #45475a #000000
 
 # Disable focus follows mouse
 focus_follows_mouse no
