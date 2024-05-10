@@ -1,0 +1,2 @@
+# Ignore tmux plugins folder to avoid nested git repo
+.config/tmux/plugins/*

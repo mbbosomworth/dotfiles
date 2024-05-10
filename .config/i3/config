@@ -165,6 +165,7 @@ gaps inner 2
 
 # Disable title bars
 for_window [class=".*"] border pixel 0
+# client.focused              #353439 #B4BEFE #7B9F35
 
 # Disable focus follows mouse
 focus_follows_mouse no
@@ -175,3 +176,6 @@ bindsym $mod+shift+s move scratchpad
 
 # Show the first scratchpad window
 bindsym $mod+s scratchpad show
+
+# Move mouse to the bottom right corner of screen
+bindsym $mod+m exec ~/scripts/mousemove.sh

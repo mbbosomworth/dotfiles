@@ -1,6 +1,6 @@
 #
 # ~/.bashrc
-# 
+#
 
 # XDG base directories
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -20,6 +20,7 @@ alias ll='ls -la --color=auto'
 alias grep='grep --color=auto'
 alias vim='nvim'
 alias g='g++ -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion'
+alias neo='clear && neofetch && read'
 
 # Prompt
 PS1='[\u@\h \W]\$ '
