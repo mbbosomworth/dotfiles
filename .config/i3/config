@@ -161,13 +161,13 @@ bindsym $mod+x exec i3lock -i /usr/share/backgrounds/catppuccin/bkg3_bkg5.png
 exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 
 # Gaps
-gaps inner 4
+gaps inner 2
 
 # Disable title bars
 for_window [class=".*"] border pixel 2
 
 # Border colors
-client.focused              #000000 #45475a #000000
+client.focused              #000000 #b8c0e0 #000000
 
 # Disable focus follows mouse
 focus_follows_mouse no
