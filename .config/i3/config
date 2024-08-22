@@ -197,7 +197,8 @@ client.background         $base
 exec --no-startup-id picom --no-fading-openclose
 
 # Polybar
-exec_always --no-startu-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id killall polybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Wallpaper
 exec_always feh --bg-scale /usr/share/backgrounds/catppuccin/bkg3_bkg5.png
