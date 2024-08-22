@@ -6,7 +6,7 @@ set $mod Mod1
 exec --no-startup-id dex --autostart --environment i3
 
 # Font
-font pango:HackNerdFontMono 8
+font pango:HackNerdFontMono 12
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -162,6 +162,9 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+# Picom
+exec --no-startup-id picom --no-fading-openclose
 
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh

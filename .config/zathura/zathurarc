@@ -1,2 +1,18 @@
 # Enable copy to clipboard
 set selection-clipboard clipboard
+
+# Eliminate padding
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 1
+
+# Inverts colors
+map i recolor
+
+# Sane vim-like defaults
+map u scroll half-up
+map d scroll half-down
+map D toggle_page_mode
+map r reload
+map R rotate
+map p print
