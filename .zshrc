@@ -60,10 +60,20 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias ls='ls --color=auto'
 alias ll='ls -la --color=auto'
+
 alias grep='grep --color=auto'
+
 alias vim='nvim'
+
 alias g='g++ -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion'
+
 alias neo='clear && neofetch && read'
+
+alias st='stow --adopt .'
+
+alias ga='git add .'
+alias gc='git commit -m'
+alias gp='git push'
 
 # Shell integrations
 eval "$(fzf --zsh)"

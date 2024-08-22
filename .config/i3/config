@@ -72,7 +72,7 @@ bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-#bindsym $mod+e layout toggle split
+bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -89,7 +89,7 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1: Terminal"
-set $ws10 "2"
+set $ws2 "2"
 set $ws3 "3: Discord"
 set $ws4 "4: Firefox"
 set $ws5 "5"
@@ -167,10 +167,10 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id picom --no-fading-openclose
 
 # Polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startu-id $HOME/.config/polybar/launch.sh
 
 # Wallpaper
-exec nitrogen --restore
+exec_always feh --bg-scale /usr/share/backgrounds/catppuccin/bkg3_bkg5.png
 
 # Lockscreen
 bindsym $mod+x exec i3lock -i /usr/share/backgrounds/catppuccin/bkg3_bkg5.png
