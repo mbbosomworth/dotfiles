@@ -126,6 +126,7 @@ assign [class="steam" title="Steam"] $ws10
 
 # load assigned applications to their workspace on startup
 exec --no-startup-id kitty
+exec --no-startup-id thunar
 exec --no-startup-id discord
 exec --no-startup-id firefox
 #exec --no-startup-id steam

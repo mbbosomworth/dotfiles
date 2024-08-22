@@ -69,5 +69,11 @@ alias ga='git add .'
 alias gc='git commit -m'
 alias gp='git push'
 
+# For startup
+if [[ ! -f /tmp/flagfile ]]; then
+  neo;
+  touch /tmp/flagfile
+fi
+
 # Shell integrations
 eval "$(fzf --zsh)"
