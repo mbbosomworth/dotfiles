@@ -128,7 +128,7 @@ assign [class="steam" title="Steam"] $ws10
 exec --no-startup-id kitty
 exec --no-startup-id discord
 exec --no-startup-id firefox
-exec --no-startup-id steam
+#exec --no-startup-id steam
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
