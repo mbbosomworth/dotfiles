@@ -129,7 +129,7 @@ exec --no-startup-id kitty
 exec --no-startup-id thunar
 exec --no-startup-id discord
 exec --no-startup-id firefox
-#exec --no-startup-id steam
+exec --no-startup-id steam
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -191,7 +191,7 @@ set $crust      #11111b
 client.focused            $mantle     $mauve  $mantle   $rosewater  $blue  
 client.focused_inactive   $overlay0   $base   $text     $rosewater  $overlay0
 # client.unfocused          $overlay0   $base   $text     $rosewater  $overlay0
-client.urgent             $peach      $base   $peach    $overlay0   $peach
+client.urgent             $sky      $base   $sky    $overlay0   $sky
 client.placeholder        $overlay0   $base   $text     $overlay0   $overlay0
 client.background         $base
 
