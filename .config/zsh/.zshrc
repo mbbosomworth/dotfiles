@@ -1,3 +1,9 @@
+# For startup
+if [[ ! -f /tmp/fastflag ]]; then
+  fastfetch;
+  touch /tmp/fastflag
+fi
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -62,7 +68,7 @@ alias ls='ls --color=auto'
 alias ll='ls -la --color=auto'
 alias grep='grep --color=auto'
 alias vim='nvim'
-alias neo='clear && neofetch && echo | read'
+alias fast='clear && fastfetch && echo | read'
 alias st='stow --adopt .'
 alias ga='git add .'
 alias gc='git commit -m'
@@ -71,12 +77,6 @@ alias gp='git push'
 # For C++
 # alias g='g++ -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion'
 # For C
-
-# For startup
-if [[ ! -f /tmp/flagfile ]]; then
-  neo;
-  touch /tmp/flagfile
-fi
 
 # Shell integrations
 eval "$(fzf --zsh)"
