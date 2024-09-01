@@ -196,7 +196,7 @@ client.placeholder        $overlay0   $base   $text     $overlay0   $overlay0
 client.background         $base
 
 # Picom
-exec --no-startup-id picom --no-fading-openclose
+# exec --no-startup-id picom --no-fading-openclose
 
 # Polybar
 exec_always --no-startup-id killall polybar

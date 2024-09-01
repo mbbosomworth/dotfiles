@@ -62,12 +62,15 @@ alias ls='ls --color=auto'
 alias ll='ls -la --color=auto'
 alias grep='grep --color=auto'
 alias vim='nvim'
-alias g='g++ -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion'
 alias neo='clear && neofetch && echo | read'
 alias st='stow --adopt .'
 alias ga='git add .'
 alias gc='git commit -m'
 alias gp='git push'
+
+# For C++
+# alias g='g++ -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion'
+# For C
 
 # For startup
 if [[ ! -f /tmp/flagfile ]]; then
