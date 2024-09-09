@@ -10,6 +10,7 @@ export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
 # ZSH base directories
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
-# Default editor
+# Default
 export EDITOR="nvim"
 export VISUAL="nvim"
+export BROWSER=/usr/bin/firefox

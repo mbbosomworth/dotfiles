@@ -129,7 +129,7 @@ exec --no-startup-id kitty
 exec --no-startup-id thunar
 exec --no-startup-id discord
 exec --no-startup-id firefox
-exec --no-startup-id steam
+# exec --no-startup-id steam
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -197,6 +197,9 @@ client.background         $base
 
 # Picom
 # exec --no-startup-id picom --no-fading-openclose
+
+# Move mouse on start
+exec_always ~/scripts/mousemove.sh
 
 # Polybar
 exec_always --no-startup-id killall polybar
