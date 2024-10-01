@@ -90,7 +90,7 @@ set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9"
+set $ws9 "9: Spotify"
 set $ws10 "10: Steam"
 
 # switch to workspace
@@ -122,6 +122,7 @@ assign [class="kitty" title="Kitty"] $ws1
 assign [class="Thunar" title="Thunar"] $ws2
 assign [class="discord" title="Discord"] $ws3
 assign [class="firefox" title="Firefox"] $ws4
+assign [class="Spotify" title="Spotify"] $ws9
 assign [class="steam" title="Steam"] $ws10
 
 # load assigned applications to their workspace on startup
@@ -129,6 +130,7 @@ exec --no-startup-id kitty
 exec --no-startup-id thunar
 exec --no-startup-id discord
 exec --no-startup-id firefox
+# exec --no-startup-id spotify-launcher
 # exec --no-startup-id steam
 
 # reload the configuration file
@@ -194,6 +196,16 @@ client.focused_inactive   $overlay0   $base   $text     $rosewater  $overlay0
 client.urgent             $sky      $base   $sky    $overlay0   $sky
 client.placeholder        $overlay0   $base   $text     $overlay0   $overlay0
 client.background         $base
+
+# Pop up window settings
+for_window [window_role="pop-up"]                       floating enable
+for_window [window_role="bubble"]                       floating enable 
+for_window [window_role="task_dialog"]                  floating enable
+for_window [window_role="Preferences"]                  floating enable
+for_window [window_type="dialog"]                       floating enable 
+for_window [window_type="menu"]                         floating enable
+for_window [title="Event Tester"]                       floating enable
+for_window [class="Youtube-dl-gui"]                     floating enable
 
 # Picom
 # exec --no-startup-id picom --no-fading-openclose
