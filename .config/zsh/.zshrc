@@ -72,6 +72,7 @@ alias fast='clear && fastfetch && echo | read'
 alias st='stow --adopt .'
 alias ga='git add .'
 alias gc='git commit -m'
+alias gac='git commit -am'
 alias gp='git push'
 
 # For C++
