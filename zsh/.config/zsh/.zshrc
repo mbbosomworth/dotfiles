@@ -38,6 +38,9 @@ autoload -U compinit && compinit
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Cursor
+echo -e "\033[2 q"
+
 # Keybindings
 # bindkey -e
 bindkey -v
@@ -68,7 +71,7 @@ alias ls='ls --color=auto'
 alias ll='ls -lah --color=auto'
 alias grep='grep --color=auto'
 alias vim='nvim'
-alias fast='clear && fastfetch && echo | read'
+alias fetch='clear && fastfetch && echo | read'
 alias st='stow --adopt .'
 alias ga='git add .'
 alias gc='git commit -m'
