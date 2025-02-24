@@ -39,7 +39,7 @@ autoload -U compinit && compinit
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Cursor
-echo -e "\033[2 q"
+# echo -e "\033[2 q"
 
 # Keybindings
 # bindkey -e
