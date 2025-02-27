@@ -41,9 +41,6 @@ autoload -U compinit && compinit
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Cursor
-# echo -e "\033[2 q"
-
 # Keybindings
 # bindkey -e
 bindkey -v
