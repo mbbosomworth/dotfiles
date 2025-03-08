@@ -78,6 +78,7 @@ alias ga='git add .'
 alias gc='git commit -m'
 alias gac='git commit -am'
 alias gp='git push'
+alias gsp='git stash && git pull'
 
 # For C++
 # alias g='g++ -pedantic-errors -Wall -Weffc++ -Wextra -Wconversion -Wsign-conversion'
